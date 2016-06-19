@@ -1,0 +1,1 @@
+#!/usr/bin/env python# -*- coding: utf-8 -*-print 'Hi %s, your score is %d.' % ('Bart', 59)
