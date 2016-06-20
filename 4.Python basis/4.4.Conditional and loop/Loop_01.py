@@ -1,0 +1,1 @@
+#!/usr/ibn/env python# Print elements from list 'name':names=['Michael','Bob','Tracy']for name in names:	print name

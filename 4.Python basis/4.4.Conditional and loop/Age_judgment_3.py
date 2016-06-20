@@ -1,0 +1,1 @@
+#!/usr/bin/env python#-*- coding: utf-8 -*-#Input your birth year, to see if you are '00后' or '00前'birth=int(raw_input('Please input your birth year:'))if birth>=2000:	print u'00后'else:	print u'00前'
