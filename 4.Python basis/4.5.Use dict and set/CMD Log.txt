@@ -1,0 +1,92 @@
+Microsoft Windows XP [版本 5.1.2600]
+(C) 版权所有 1985-2001 Microsoft Corp.
+
+C:\Documents and Settings\Administrator>python
+Python 2.7.9 (default, Dec 10 2014, 12:24:55) [MSC v.1500 32 bit (Intel)] on win
+32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> d['Adam']=67
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'd' is not defined
+>>> d['Adam'] = 67
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'd' is not defined
+>>> d['Jack'] = 90
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'd' is not defined
+>>> 'Thomas' in d
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'd' is not defined
+>>> d={'Michael,'}
+>>> d={'Michael':95,'Bob':75,'Tracy':85}
+>>> d['Adam'=67]
+  File "<stdin>", line 1
+    d['Adam'=67]
+            ^
+SyntaxError: invalid syntax
+>>> d['Adam']=67
+>>> d['Adam']
+67
+>>> d['Jack']=90
+>>> d['Jack']
+90
+>>> d['Jack']=88
+>>> d['Jack']
+88
+>>> 'Thomas' in d
+False
+>>> 'Adam' in d
+True
+>>> d.get('Thomas')
+>>> d.get('Thomas', -1)
+-1
+>>> d.pop('Bob')
+75
+>>> d
+{'Jack': 88, 'Michael': 95, 'Tracy': 85, 'Adam': 67}
+>>> d.get('Bob', -1)
+-1
+>>> s=set([1,2,3])
+>>> s
+set([1, 2, 3])
+>>> s=set([1,1,2,3])
+>>> s
+set([1, 2, 3])
+>>> s.add(4)
+>>> s
+set([1, 2, 3, 4])
+>>> s.remove(4)
+>>> s
+set([1, 2, 3])
+>>> s1=set([1,2,3])
+>>> s2=set([2,3,4])
+>>> s1&s2
+set([2, 3])
+>>> s1|s2
+set([1, 2, 3, 4])
+>>> a=['c','b','a']
+>>> a.sort()
+>>> a
+['a', 'b', 'c']
+>>> a='abc'
+>>> a.replace('a','A')
+'Abc'
+>>> a
+'abc'
+>>> t=dict((1,2,3))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+>>> t=dict{(1,2,3)}
+  File "<stdin>", line 1
+    t=dict{(1,2,3)}
+          ^
+SyntaxError: invalid syntax
+>>> t=set((1,2,3))
+>>> t
+set([1, 2, 3])
+>>>
